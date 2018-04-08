@@ -19,7 +19,8 @@
 #include <signal.h>
 
 //#define MOUSEFILE "/dev/input/event5" // Change based on event
-#define MOUSEFILE "/dev/input/event15" // Change based on event
+//#define MOUSEFILE "/dev/input/event15" // Change based on event
+#define MOUSEFILE "/dev/input/event0" // Change based on event
 
 Adafruit_MotorHAT hat;
 
