@@ -22,8 +22,8 @@ DEBUG = -g
 CFLAGS = -std=c++11 -fPIC -Wall # -pg
 CVINC = -I/usr/local/include/opencv -I/usr/local/include
 CVLIBS = -L/usr/local/lib -lopencv_highgui -lopencv_videoio -lopencv_core -lopencv_imgproc -lopencv_imgcodecs -lopencv_objdetect -lopencv_calib3d
-INC = -I$(HDR_DIR) $(CVINC)
-LDFLAGS = $(CVLIBS) -lrt -lwiringPi -lpthread -lcrypt -lsweep -lfreenect -lrealsense2
+INC = -I$(HDR_DIR) 
+LDFLAGS = -lrt -lwiringPi -lpthread -lcrypt -lrealsense2
 INCLUDE = -I/usr/local/include/libfreenecta -I/usr/include/libusb-1.0
 
 all: $(DEFAULT_TGT)
